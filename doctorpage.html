@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor's Dashboard</title>
+  <link rel="stylesheet" href="doctorpage.css">
+</head>
+<body>
+  <div class="doctor-container">
+    <header class="doctor-header">
+      <div class="doctor-info">
+        <h1 id="doctor-name">Dr. John Doe</h1>
+        <p id="doctor-degree">MBBS, MD - Cardiology</p>
+      </div>
+      <button class="edit-profile" onclick="editProfile()">Edit Profile</button>
+    </header>
+
+    <main>
+      <section class="appointments">
+        <h2>Appointments</h2>
+        <div id="appointments-list" class="appointments-list">
+          <!-- Appointment items will be listed here -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Edit Profile Modal -->
+  <div id="edit-profile-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <h3>Edit Profile</h3>
+      <label for="doctor-name-input">Doctor's Name:</label>
+      <input type="text" id="doctor-name-input" value="Dr. John Doe">
+      
+      <label for="doctor-degree-input">Degree:</label>
+      <input type="text" id="doctor-degree-input" value="MBBS, MD - Cardiology">
+      
+      <button onclick="saveProfile()">Save Changes</button>
+      <button onclick="closeModal()">Cancel</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; CareConnect Doctor Appointment System</p>
+  </footer>
+
+  <script src="doctorpage.js"></script>
+</body>
+</html>

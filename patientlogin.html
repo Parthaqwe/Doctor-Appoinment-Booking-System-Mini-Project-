@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Login</title>
+  <link rel="stylesheet" href="patientlogin.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-form">
+      <h2>Patient Login</h2>
+      <form id="patient-form" action="#" method="POST">
+        <!-- Full Name -->
+        <div class="input-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+        </div>
+        
+        <!-- Mobile Number -->
+        <div class="input-group">
+          <label for="mobile">Mobile Number</label>
+          <input type="text" id="mobile" name="mobile" required placeholder="Enter your mobile number">
+        </div>
+        
+        <!-- Email -->
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        
+        <!-- Password -->
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </div>
+        
+        <!-- Confirm Password -->
+        <div class="input-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+        </div>
+        
+        <!-- Date of Birth -->
+        <div class="input-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+        
+        <!-- Gender -->
+        <div class="input-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        
+        <!-- Submit Button -->
+        <button type="submit" id="register-button">Register</button>
+        <p>Already have an account? <a href="patientL.html">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="patientlogin.js"></script>
+</body>
+</html>

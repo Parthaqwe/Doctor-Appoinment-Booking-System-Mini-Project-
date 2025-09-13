@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Login</title>
+  <link rel="stylesheet" href="doctorlogin.css">
+</head>
+<body>
+  <div class="login-container">
+    <!-- Login Form -->
+    <div class="login-form" id="login-form">
+      <h2>Doctor Login</h2>
+      <form id="login" action="#" method="POST">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </div>
+        <button type="submit" id="login-button">Login</button>
+        <p>Don't have an account? <a href="javascript:void(0)" onclick="showCreateProfileForm()">Create a profile</a></p>
+      </form>
+    </div>
+
+    <!-- Profile Creation Form -->
+    <div class="profile-creation-form" id="profile-creation-form" style="display: none;">
+      <h2>Create Doctor Profile</h2>
+      <form id="profile-form">
+        <div class="input-group">
+          <label for="doctor-name">Doctor's Name</label>
+          <input type="text" id="doctor-name" name="doctor-name" required placeholder="Enter your full name">
+        </div>
+        <div class="input-group">
+          <label for="email-create">Email</label>
+          <input type="email" id="email-create" name="email-create" required placeholder="Enter your email">
+        </div>
+        <div class="input-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="input-group">
+          <label for="education">Education</label>
+          <input type="text" id="education" name="education" required placeholder="Enter your degree(s)">
+        </div>
+        <div class="input-group">
+          <label for="experience">Experience (years)</label>
+          <input type="number" id="experience" name="experience" required placeholder="Enter years of experience">
+        </div>
+        <div class="input-group">
+          <label for="password-create">Password</label>
+          <input type="password" id="password-create" name="password-create" required placeholder="Enter your password">
+        </div>
+        <button type="submit" id="create-profile-button">Create Profile</button>
+        <p>Already have an account? <a href="javascript:void(0)" onclick="showLoginForm()">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="doctorlogin.js"></script>
+</body>
+</html>

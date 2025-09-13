@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Dashboard - Appointment Booking</title>
+  <link rel="stylesheet" href="patient.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome, Patient!</h1>
+      <p>Book your doctor appointment easily.</p>
+    </header>
+
+    <main>
+      <section class="specialty-selection">
+        <h2>Select a Specialty</h2>
+        <div class="specialty-cards">
+          <!-- Specialty Cards will be here -->
+        </div>
+      </section>
+
+      <section class="doctor-selection" id="doctor-selection" style="display: none;">
+        <h2>Choose a Doctor</h2>
+        <div id="doctor-list"></div>
+
+        <div class="appointment-details" id="appointment-details" style="display: none;">
+          <label for="doctor-name">Select Doctor:</label>
+          <select id="doctor-name" name="doctor-name"></select>
+          
+          <label for="appointment-time">Choose Appointment Time:</label>
+          <input type="datetime-local" id="appointment-time" name="appointment-time">
+          
+          <button id="book-appointment">Book Appointment</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; CareConnect Doctor Appointment System</p>
+  </footer>
+
+  <script src="patient.js"></script>
+</body>
+</html>
+
+
